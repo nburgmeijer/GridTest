@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ComponentGrid : MonoBehaviour
 {
+    [SerializeField]
+    private Material material;
     private Grid _grid;
     // Start is called before the first frame update
     void Start()
     {
-        _grid = new Grid(10, 10, 16);
+        _grid = new Grid(2, 4, 16,material);
 
     }
 
@@ -17,4 +19,5 @@ public class ComponentGrid : MonoBehaviour
     {
         
     }
+
 }
